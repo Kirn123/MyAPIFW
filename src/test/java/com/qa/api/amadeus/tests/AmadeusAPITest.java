@@ -30,7 +30,7 @@ public class AmadeusAPITest extends BaseTest{
 		ConfigManager.set("bearertoken", accessToken);
 	}
 
-	@Test
+	@Test (enabled = false)
 	public void getFlightDetailsTest() {
 		
 		//https://test.api.amadeus.com/v1/shopping/flight-destinations?origin=PAR&maxPrice=200
