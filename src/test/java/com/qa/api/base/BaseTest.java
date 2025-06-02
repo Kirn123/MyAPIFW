@@ -2,15 +2,15 @@ package com.qa.api.base;
 
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 
 import com.qa.api.client.RestClient;
 
 import io.qameta.allure.restassured.AllureRestAssured;
-
 import io.restassured.RestAssured;
 
-//@Listeners
-//(ChainTestListener.class)
+
+//@Listeners(ChainTestListeners.class)
 
 public class BaseTest {
 	
@@ -19,7 +19,7 @@ public class BaseTest {
 
 	protected RestClient restClient;
 
-	// ********** API Base URLs*******//
+	// **********ds API Base URLs*******//
 
 	protected final static String BASE_URL_GOREST = "https://gorest.co.in";
 	protected final static String BASE_URL_CONTACTS = "https://thinking-tester-contact-list.herokuapp.com";
